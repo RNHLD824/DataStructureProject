@@ -7,6 +7,7 @@ using namespace std;
 
 
 int main ()	{
+	system("color D");
 	while(true)	{
 		
 	int choices, lineNumber, removeNumber;
@@ -28,31 +29,33 @@ int main ()	{
 //Switch statement for the main menu
 	switch(choices){
 		case 1:
-			cout <<"\t\t\tExcellent" << endl;
+			cout <<"\t\t\tGet a number: " << endl;
 			break;
 		case 2:
-			cout <<"\t\t\tVery Good" << endl;
+			cout <<"\t\t\tRemove number: " << endl;
 			break;
 		case 3:
-			cout <<"\t\t\tGood" << endl;
+			cout <<"\t\t\tActive numbers: " << endl;
 			break;
 		case 4:
-			cout <<"\t\t\tFair" << endl;
+			cout <<"\t\t\tSorted active numbers:" << endl;
 			break;
 		case 5:
-			cout <<"\t\t\tSatisfactory" << endl;
+			cout <<"\t\t\tSkipped Numbers:" << endl;
 			break;
 		case 6:
-			cout <<"\t\t\tPassing" << endl;
+			cout <<"\t\t\tUsed Numbers:" << endl;
 			break;
 		case 7:
 			cout <<"\t\t\tThe numbers were reset";
 			break;
 		case 8:
+			cout <<"\t\t\tThank you for using the system!";
 			return 1;
 			break;
 		default: 
-			cout <<"\t\t\tERROR!" << endl; 
+			system("color 47");
+			cout <<"\t\t\tERROR! Not in the choices" << endl;
 	}
 	getche();
 	system("cls");
